@@ -1,0 +1,46 @@
+.input-common, header .inputs .weight .input-weight input, header .inputs .height .input-height input {
+  height: 2.5rem;
+  width: 80%;
+}
+
+header .logo-top {
+  width: 100%;
+}
+header .logo-top img {
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+header .div-bmi {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20%;
+}
+header .div-bmi .bmi-content {
+  width: 40%;
+}
+header .div-bmi .bmi-card {
+  width: 40%;
+  background-color: pink;
+}
+header .div-bmi .bmi-card .choose-metrics {
+  display: flex;
+}
+header .div-bmi .bmi-card .choose-metrics .div-metric {
+  display: flex;
+}
+header .div-bmi .bmi-card .choose-metrics .div-metric label {
+  margin-left: 1rem;
+}
+header .div-bmi .bmi-card .choose-metrics .div-imperial {
+  display: flex;
+}
+header .div-bmi .bmi-card .choose-metrics .div-imperial label {
+  margin-left: 1rem;
+}
+header .inputs {
+  display: flex;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

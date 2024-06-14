@@ -1,0 +1,79 @@
+// classes para serem herdadas
+
+.input-common{
+    height: 2.5rem;
+    width: 80%;
+}
+
+header{
+
+    .logo-top{
+        width: 100%;
+
+        img{
+            margin-left: 6rem;
+            margin-top: 3rem;
+        }
+    }
+
+    .div-bmi{
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        gap: 20%;
+
+        .bmi-content{
+            width: 40%;
+        }
+
+        .bmi-card{
+            width: 40%;
+            background-color: pink;
+
+            .choose-metrics{
+                display: flex;
+                
+                
+                .div-metric{
+                    display: flex;
+
+                    label{
+                        margin-left: 1rem;
+                    }
+                }
+
+                .div-imperial{
+                    display: flex;
+
+                    label{
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .inputs{
+        display: flex;
+        margin: 0 auto;
+
+        .height{
+            .input-height{
+                input{
+                    @extend .input-common;
+                }
+            }
+        }
+
+        .weight{
+            .input-weight{
+                input{
+                    @extend .input-common;
+                }
+            }
+        }
+    }
+
+
+}
+

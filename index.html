@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Body Mass Index Calculator</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-top">
+        <img src="./src/img/logo.svg" alt="" />
+      </div>
+      <div class="div-bmi">
+        <div class="bmi-content">
+          <h1>Body Mass Index Calculator</h1>
+
+          <p>
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
+          </p>
+        </div>
+
+        <div class="bmi-card">
+            <h2>Enter your details below</h2>
+            <div  class="choose-metrics">
+                <div class="div-metric">
+                    <div class="div-input-metric-radio">
+                        <input id="input-metric-radio" name="metrics" type="radio">
+                    </div>
+                    <label for="input-metric-radio">Metric</label>
+                </div>
+                <div class="div-imperial"> 
+                    <div class="div-input-imperial-radio">
+                        <input id="input-imperial-radio"  name="metrics" type="radio">
+                    </div>
+                    <label for="input-imperial-radio">Imperial</label>
+                </div>
+            </div>
+
+            <div class="inputs">
+                
+                <div class="height">
+                    <h4>Height</h4>
+                    <div class="input-height">
+                        <input type="text">
+                        <span>cm</span>
+                    </div>
+                </div>
+
+                <div class="weight">
+                    <h4>Weight</h4>
+                    <div class="input-weight">
+                        <input type="text">
+                        <span>kg</span>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+      </div>
+    </header>
+
+   
+  </body>
+</html>
