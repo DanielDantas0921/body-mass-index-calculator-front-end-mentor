@@ -1,0 +1,278 @@
+// classes para serem herdadas
+
+.input-common {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 0.5rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: $input-checked-label;
+  border: none;
+}
+
+.divElInputCheckedLabelAfter {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: $blue; /* Cor do círculo interno */
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+header {
+    position: relative;
+  .logo-top {
+    width: 100%;
+
+    img {
+      margin-left: 6rem;
+      margin-top: 3rem;
+    }
+  }
+
+  .div-bmi {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20%;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    .bmi-content {
+      width: 40%;
+      h1{
+        color: $gunmetal;
+        margin-bottom: 2rem;
+      }
+      p{
+        color: $dark-eletric-blue;
+      }
+    }
+
+    .bmi-card {
+      width: 40%;
+      background-color: #fff;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+      .choose-metrics {
+        display: flex;
+
+        margin-bottom: 1rem;
+
+        .div-metric {
+          display: flex;
+          margin-right: 7rem;
+          align-items: center;
+
+          .div-input-metric-radio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.5rem;
+
+            label {
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              position: relative;
+              cursor: pointer;
+              border: 1px solid #5e6e85;
+            }
+
+            #input-metric-radio:checked + label:after {
+              @extend .divElInputCheckedLabelAfter;
+            }
+          }
+        }
+
+        .div-imperial {
+          display: flex;
+          align-items: center;
+
+          .div-input-imperial-radio {
+            margin-right: 0.5rem;
+
+            label {
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              position: relative;
+              cursor: pointer;
+              border: 1px solid #5e6e85;
+            }
+
+            #input-imperial-radio:checked + label:after {
+              @extend .divElInputCheckedLabelAfter;
+            }
+          }
+        }
+      }
+
+      .inputs {
+        // margin: 0 auto;
+
+        .inputs-metric {
+          display: flex;
+          span {
+            color: blue;
+          }
+
+          .height {
+            .input-height {
+              position: relative;
+              input {
+                width: 90%;
+                @extend .input-common;
+              }
+              span {
+                position: absolute;
+                right: 1.8rem;
+                top: 0.7rem;
+              }
+            }
+          }
+
+          .weight {
+            .input-weight {
+              position: relative;
+              input {
+                width: 90%;
+                @extend .input-common;
+              }
+              span {
+                position: absolute;
+                right: 1.8rem;
+                top: 0.7rem;
+              }
+            }
+          }
+        }
+
+        .inputs-imperial {
+            
+          .height {
+            .input-height {
+              display: flex;
+              span {
+                color: blue;
+              }
+
+              .height-foot {
+                position: relative;
+                input {
+                  width: 90%;
+                  @extend .input-common;
+                }
+
+                span {
+                  position: absolute;
+                  right: 1.8rem;
+                  top: 0.7rem;
+                }
+              }
+
+              .height-inch {
+                position: relative;
+                input {
+                  width: 90%;
+                  @extend .input-common;
+                }
+                span {
+                  position: absolute;
+                  right: 1.8rem;
+                  top: 0.7rem;
+                }
+              }
+            }
+          }
+
+          .weight{
+            
+            .input-weight {
+              display: flex;
+              span {
+                color: blue;
+              }
+
+              .weight-stone {
+                position: relative;
+                input {
+                  width: 90%;
+                  @extend .input-common;
+                }
+
+                span {
+                  position: absolute;
+                  right: 1.8rem;
+                  top: 0.7rem;
+                }
+              }
+
+              .weight-pounds {
+                position: relative;
+                input {
+                  width: 90%;
+                  @extend .input-common;
+                }
+                span {
+                  position: absolute;
+                  right: 1.8rem;
+                  top: 0.7rem;
+                }
+              }
+            }
+          
+
+          }
+        }
+      }
+
+      .div-bmi-card-description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+          width:90%;
+          height: 8rem;
+          background-color: blue;
+          border-radius: 0 54px 54px 0;
+          color: white;
+          margin-top: 2rem;
+
+          h2{
+            margin-bottom: 0.5rem;
+          }
+      }
+
+    }
+  }
+
+  .retangle{
+    position: absolute;
+    // width: 63rem;
+    width: 70%;
+    height: 37rem;
+    border-radius: 0 0px 1rem 0;
+    background: linear-gradient(to left, #D6E6FE,rgba(214, 252, 254, 0%) );
+    top: 0;
+    left: 2rem;
+    z-index: -3;
+  }
+
+}

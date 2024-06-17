@@ -1,1 +1,13 @@
-@import "./sections/header.scss"
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+@import "./variables.scss";
+@import "./typography.scss";
+@import "./sections/1-header.scss";
+@import "./sections/2-bmi-result-means.scss";
+@import "./sections/3-icons-bmi.scss";
+@import "./sections/4-limitations-of-bmi.scss";

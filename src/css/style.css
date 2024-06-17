@@ -1,8 +1,50 @@
-.input-common, header .inputs .weight .input-weight input, header .inputs .height .input-height input {
-  height: 2.5rem;
-  width: 80%;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
 }
 
+.bodyS {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5E6E85;
+}
+
+.input-common, header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds input, header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone input, header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch input, header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot input, header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight input, header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height input {
+  height: 2.5rem;
+  width: 80%;
+  border-radius: 0.5rem;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  background-color: rgba(59, 96, 230, 0.15);
+  border: none;
+}
+
+.divElInputCheckedLabelAfter, header .div-bmi .bmi-card .choose-metrics .div-imperial .div-input-imperial-radio #input-imperial-radio:checked + label:after, header .div-bmi .bmi-card .choose-metrics .div-metric .div-input-metric-radio #input-metric-radio:checked + label:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #345FF6; /* Cor do círculo interno */
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+header {
+  position: relative;
+}
 header .logo-top {
   width: 100%;
 }
@@ -16,31 +58,269 @@ header .div-bmi {
   display: flex;
   gap: 20%;
 }
+header .div-bmi h2 {
+  margin-bottom: 1rem;
+}
 header .div-bmi .bmi-content {
   width: 40%;
 }
+header .div-bmi .bmi-content h1 {
+  color: #253347;
+  margin-bottom: 2rem;
+}
+header .div-bmi .bmi-content p {
+  color: #5E6E85;
+}
 header .div-bmi .bmi-card {
   width: 40%;
-  background-color: pink;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 header .div-bmi .bmi-card .choose-metrics {
   display: flex;
+  margin-bottom: 1rem;
 }
 header .div-bmi .bmi-card .choose-metrics .div-metric {
   display: flex;
+  margin-right: 7rem;
+  align-items: center;
 }
-header .div-bmi .bmi-card .choose-metrics .div-metric label {
-  margin-left: 1rem;
+header .div-bmi .bmi-card .choose-metrics .div-metric .div-input-metric-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+header .div-bmi .bmi-card .choose-metrics .div-metric .div-input-metric-radio label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #5e6e85;
 }
 header .div-bmi .bmi-card .choose-metrics .div-imperial {
   display: flex;
+  align-items: center;
 }
-header .div-bmi .bmi-card .choose-metrics .div-imperial label {
-  margin-left: 1rem;
+header .div-bmi .bmi-card .choose-metrics .div-imperial .div-input-imperial-radio {
+  margin-right: 0.5rem;
 }
-header .inputs {
+header .div-bmi .bmi-card .choose-metrics .div-imperial .div-input-imperial-radio label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #5e6e85;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric {
   display: flex;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric span {
+  color: blue;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height {
+  position: relative;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height input {
+  width: 90%;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height span {
+  position: absolute;
+  right: 1.8rem;
+  top: 0.7rem;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight {
+  position: relative;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight input {
+  width: 90%;
+}
+header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight span {
+  position: absolute;
+  right: 1.8rem;
+  top: 0.7rem;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height {
+  display: flex;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height span {
+  color: blue;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot {
+  position: relative;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot input {
+  width: 90%;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot span {
+  position: absolute;
+  right: 1.8rem;
+  top: 0.7rem;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch {
+  position: relative;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch input {
+  width: 90%;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch span {
+  position: absolute;
+  right: 1.8rem;
+  top: 0.7rem;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight {
+  display: flex;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight span {
+  color: blue;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone {
+  position: relative;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone input {
+  width: 90%;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone span {
+  position: absolute;
+  right: 1.8rem;
+  top: 0.7rem;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds {
+  position: relative;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds input {
+  width: 90%;
+}
+header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds span {
+  position: absolute;
+  right: 1.8rem;
+  top: 0.7rem;
+}
+header .div-bmi .bmi-card .div-bmi-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 90%;
+  height: 8rem;
+  background-color: blue;
+  border-radius: 0 54px 54px 0;
+  color: white;
+  margin-top: 2rem;
+}
+header .div-bmi .bmi-card .div-bmi-card-description h2 {
+  margin-bottom: 0.5rem;
+}
+header .retangle {
+  position: absolute;
+  width: 70%;
+  height: 37rem;
+  border-radius: 0 0px 1rem 0;
+  background: linear-gradient(to left, #D6E6FE, rgba(214, 252, 254, 0));
+  top: 0;
+  left: 2rem;
+  z-index: -3;
+}
+
+.bmi-result-means {
+  display: flex;
+  width: 70%;
+  margin: 5rem auto 0 auto;
+  align-items: center;
+  gap: 3rem;
+}
+.bmi-result-means img {
+  width: 45%;
+}
+.bmi-result-means .bmi-result-means-description {
+  padding: 2rem;
+  margin-top: 8rem;
+}
+.bmi-result-means .bmi-result-means-description h1 {
+  margin-bottom: 2rem;
+  color: #253347;
+}
+.bmi-result-means .bmi-result-means-description p {
+  color: #5E6E85;
+}
+
+.icons-bmi {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 70%;
   margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+.icons-bmi .icons-card h3 {
+  color: #253347;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.icons-bmi .icons-card p {
+  color: #5E6E85;
+}
+
+.limitations-1 {
+  display: flex;
+  gap: 10rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.limitations-1 .limitations-1-children-1 {
+  width: 40rem;
+}
+.limitations-1 .limitations-1-children-1 h1 {
+  margin-bottom: 2.5rem;
+  color: #253347;
+}
+.limitations-1 .limitations-1-children-1 p {
+  color: #5E6E85;
+}
+.limitations-1 .limitations-card {
+  width: 20rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+.limitations-1 .limitations-card .div-limitations-h1 {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.limitations-1 .limitations-card .div-limitations-h1 h1 {
+  color: #253347;
+}
+.limitations-1 .limitations-card .div-limitations-h1 img {
+  margin-right: 0.5rem;
+}
+.limitations-1 .limitations-card p {
+  color: #5E6E85;
+}
+
+.limitations-2 {
+  display: flex;
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: end;
+  gap: 2rem;
+}
+.limitations-2 .curved-line {
+  position: absolute;
+  top: 0rem;
+  left: 6rem;
+}
+.limitations-2 .limitations-card {
+  margin-top: 0.5rem;
+  width: 18rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

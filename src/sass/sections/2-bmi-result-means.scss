@@ -1,0 +1,22 @@
+.bmi-result-means {
+  display: flex;
+  width: 70%;
+  margin: 5rem auto 0 auto;
+  align-items: center;
+  gap: 3rem;
+  img {
+    width: 45%;
+  }
+
+  .bmi-result-means-description {
+    padding: 2rem;
+    margin-top: 8rem;
+    h1 {
+      margin-bottom: 2rem;
+      color: $gunmetal;
+    }
+    p {
+      color: $dark-eletric-blue;
+    }
+  }
+}
