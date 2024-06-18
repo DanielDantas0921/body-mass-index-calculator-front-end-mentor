@@ -31,7 +31,7 @@ input[type="radio"]:checked + label {
 }
 
 header {
-    position: relative;
+  position: relative;
   .logo-top {
     width: 100%;
 
@@ -53,11 +53,11 @@ header {
 
     .bmi-content {
       width: 40%;
-      h1{
+      h1 {
         color: $gunmetal;
         margin-bottom: 2rem;
       }
-      p{
+      p {
         color: $dark-eletric-blue;
       }
     }
@@ -165,7 +165,6 @@ header {
         }
 
         .inputs-imperial {
-            
           .height {
             .input-height {
               display: flex;
@@ -202,8 +201,7 @@ header {
             }
           }
 
-          .weight{
-            
+          .weight {
             .input-weight {
               display: flex;
               span {
@@ -237,42 +235,70 @@ header {
                 }
               }
             }
-          
-
           }
         }
       }
 
-      .div-bmi-card-description{
+      .div-bmi-card-description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
-          width:90%;
-          height: 8rem;
-          background-color: blue;
-          border-radius: 0 54px 54px 0;
-          color: white;
-          margin-top: 2rem;
+        width: 90%;
+        height: 8rem;
+        background-color: $blue;
+        border-radius: 0 54px 54px 0;
+        color: white;
+        margin-top: 2rem;
 
-          h2{
-            margin-bottom: 0.5rem;
-          }
+        h2 {
+          margin-bottom: 0.5rem;
+        }
       }
 
+      .div-bmi-card-descripion-active {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 10%;
+        padding: 1rem;
+        width: 90%;
+        height: 8rem;
+        background-color: $blue;
+        border-radius: 0 54px 54px 0;
+        color: white;
+        .bmi-result {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          h2 {
+            font-size: 1.2rem;
+            
+          }
+          p{
+            font-size: 3.5rem;
+            text-align: center;
+            margin-right: 0.5rem;
+          }
+        }
+        .bmi-description {
+          width: 50%;
+        }
+      }
     }
   }
 
-  .retangle{
+  .retangle {
     position: absolute;
     // width: 63rem;
     width: 70%;
     height: 37rem;
     border-radius: 0 0px 1rem 0;
-    background: linear-gradient(to left, #D6E6FE,rgba(214, 252, 254, 0%) );
+    background: linear-gradient(to left, #d6e6fe, rgba(214, 252, 254, 0%));
     top: 0;
     left: 2rem;
     z-index: -3;
   }
-
 }

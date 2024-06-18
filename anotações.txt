@@ -1,0 +1,10 @@
+para fazer a funionalidade do bmi funcionar vamos precisar de
+
+* esconder a classe div-bmi-card-description e depois mostrar div-bmi-card-descripion-active
+
+*vamos precisar pegar o evento de mudança do input text dos inputs de height e de weight e fazer o cálculo. precisaremos de uma varíável local
+
+no arquivo script.js vai ter as variáveis de weght e peso que serão contadoras e em seguida vai ter o
+ eventlistiner de change de cada input que receberá como parametros essas variáveis
+
+ no arquivo inputsFunctions vai ter as funções dos inputs

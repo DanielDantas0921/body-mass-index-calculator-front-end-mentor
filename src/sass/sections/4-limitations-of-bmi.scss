@@ -17,9 +17,10 @@
 
     .limitations-card{
         width: 20rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 2rem;
+        border-radius: 5%;
         .div-limitations-h1{
             display: flex;
             margin-bottom: 1rem;
@@ -43,7 +44,7 @@
     display: flex;
     position: relative;
     width: 70%;
-    margin: 0 auto;
+    margin: 1.5rem auto 0 auto;
     justify-content: end;
     gap: 2rem;
     .curved-line{
@@ -55,6 +56,48 @@
         margin-top: 0.5rem;
         width: 18rem;
         padding: 2rem;
+        border-radius: 5%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        .div-limitations-h1{
+            display: flex;
+            margin-bottom: 1rem;
+            h1{
+                color: $gunmetal;
+            }
+            img{
+                margin-right: 0.5rem;
+            }
+        }
+        p{
+            color: $dark-eletric-blue;
+        }
+    }
+}
+
+.limitations-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 2rem;
+    .limitations-card{
+
+        margin-top: 0.5rem;
+        width: 18rem;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5%;
+        .div-limitations-h1{
+            display: flex;
+            margin-bottom: 1rem;
+            h1{
+                color: $gunmetal;
+            }
+            img{
+                margin-right: 0.5rem;
+            }
+        }
+        p{
+            color: $dark-eletric-blue;
+        }
     }
 }

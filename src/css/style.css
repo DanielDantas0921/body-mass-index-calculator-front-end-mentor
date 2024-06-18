@@ -208,7 +208,7 @@ header .div-bmi .bmi-card .div-bmi-card-description {
   padding: 1rem;
   width: 90%;
   height: 8rem;
-  background-color: blue;
+  background-color: #345FF6;
   border-radius: 0 54px 54px 0;
   color: white;
   margin-top: 2rem;
@@ -216,12 +216,42 @@ header .div-bmi .bmi-card .div-bmi-card-description {
 header .div-bmi .bmi-card .div-bmi-card-description h2 {
   margin-bottom: 0.5rem;
 }
+header .div-bmi .bmi-card .div-bmi-card-descripion-active {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 10%;
+  padding: 1rem;
+  width: 90%;
+  height: 8rem;
+  background-color: #345FF6;
+  border-radius: 0 54px 54px 0;
+  color: white;
+}
+header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result h2 {
+  font-size: 1.2rem;
+}
+header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result p {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-description {
+  width: 50%;
+}
 header .retangle {
   position: absolute;
   width: 70%;
   height: 37rem;
   border-radius: 0 0px 1rem 0;
-  background: linear-gradient(to left, #D6E6FE, rgba(214, 252, 254, 0));
+  background: linear-gradient(to left, #d6e6fe, rgba(214, 252, 254, 0));
   top: 0;
   left: 2rem;
   z-index: -3;
@@ -285,9 +315,10 @@ header .retangle {
 }
 .limitations-1 .limitations-card {
   width: 20rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
+  border-radius: 5%;
 }
 .limitations-1 .limitations-card .div-limitations-h1 {
   display: flex;
@@ -307,7 +338,7 @@ header .retangle {
   display: flex;
   position: relative;
   width: 70%;
-  margin: 0 auto;
+  margin: 1.5rem auto 0 auto;
   justify-content: end;
   gap: 2rem;
 }
@@ -320,7 +351,48 @@ header .retangle {
   margin-top: 0.5rem;
   width: 18rem;
   padding: 2rem;
+  border-radius: 5%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.limitations-2 .limitations-card .div-limitations-h1 {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.limitations-2 .limitations-card .div-limitations-h1 h1 {
+  color: #253347;
+}
+.limitations-2 .limitations-card .div-limitations-h1 img {
+  margin-right: 0.5rem;
+}
+.limitations-2 .limitations-card p {
+  color: #5E6E85;
+}
+
+.limitations-3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 2rem;
+}
+.limitations-3 .limitations-card {
+  margin-top: 0.5rem;
+  width: 18rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+}
+.limitations-3 .limitations-card .div-limitations-h1 {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.limitations-3 .limitations-card .div-limitations-h1 h1 {
+  color: #253347;
+}
+.limitations-3 .limitations-card .div-limitations-h1 img {
+  margin-right: 0.5rem;
+}
+.limitations-3 .limitations-card p {
+  color: #5E6E85;
 }
 
 /*# sourceMappingURL=style.css.map */
