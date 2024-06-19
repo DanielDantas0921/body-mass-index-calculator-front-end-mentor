@@ -8,3 +8,10 @@ no arquivo script.js vai ter as variáveis de weght e peso que serão contadoras
  eventlistiner de change de cada input que receberá como parametros essas variáveis
 
  no arquivo inputsFunctions vai ter as funções dos inputs
+
+ -----------------------
+ vou precisar de uma função para as respectivas ações
+
+ ocultar o bmi-active
+ mostrar o bmi-active
+ alterar o texto do bmi-description com o respectivo texto cabível

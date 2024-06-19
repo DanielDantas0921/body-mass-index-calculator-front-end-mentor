@@ -4,6 +4,7 @@ import { inputImperialHeightFootFun } from "./inputsFunctions.js";
 import { inputImperialHeightInchFun } from "./inputsFunctions.js";
 import { inputImperialWeightPoundsFun } from "./inputsFunctions.js";
 import { inputImperialWeightStoneFun } from "./inputsFunctions.js";
+import { hideBmiActive } from "./inputsFunctions.js";
 
 const inputsImperial = document.querySelector(".inputs-imperial");
 const inputsMetric = document.querySelector(".inputs-metric");
@@ -49,13 +50,14 @@ let generalMetricWeight = 0
 // eventListenir of change
 
 // metric
-inputMetricHeight.addEventListener("input",()=> {inputMetricHeightFun(generalMetricHeight)})
-inputMetricWeight.addEventListener("input",()=>{ inputMetricWeightFun(generalMetricWeight)})
+inputMetricHeight.addEventListener("input",inputMetricHeightFun)
+inputMetricWeight.addEventListener("input", inputMetricWeightFun)
 
 // inperial
 
-inputImperialHeightFoot.addEventListener("input", ()=>{inputImperialHeightFootFun(generalMetricHeight)} )
-inputImperialHeightInch.addEventListener("input",()=>{ inputImperialHeightInchFun(generalMetricHeight)})
-inputImperialWeightPounds.addEventListener("input", ()=>{inputImperialWeightPoundsFun(generalMetricWeight)})
-inputImperialWeightStone.addEventListener("input",()=>{inputImperialWeightStoneFun(generalMetricWeight)})
+inputImperialHeightFoot.addEventListener("input", inputImperialHeightFootFun )
+inputImperialHeightInch.addEventListener("input",inputImperialHeightInchFun)
+inputImperialWeightPounds.addEventListener("input", inputImperialWeightPoundsFun)
+inputImperialWeightStone.addEventListener("input",inputImperialWeightStoneFun)
+hideBmiActive()
 
