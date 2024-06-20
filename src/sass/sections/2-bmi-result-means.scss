@@ -4,7 +4,14 @@
   margin: 5rem auto 0 auto;
   align-items: center;
   gap: 3rem;
-  img {
+  position: relative;
+  .curved-line-left{
+    position: absolute;
+    right: 6rem;
+    top: 0;
+    width: 7%;
+  }
+  .man-eating {
     width: 45%;
   }
 
@@ -13,6 +20,7 @@
     margin-top: 8rem;
     h1 {
       margin-bottom: 2rem;
+      font-size: 2rem;
       color: $gunmetal;
     }
     p {

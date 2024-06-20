@@ -67,6 +67,9 @@ header {
       background-color: #fff;
       padding: 1.5rem;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      > h2{
+        color: $gunmetal;
+      }
 
       .choose-metrics {
         display: flex;
@@ -263,7 +266,7 @@ header {
         gap: 10%;
         padding: 1rem;
         width: 90%;
-        height: 8rem;
+        height: auto;
         background-color: $blue;
         border-radius: 0 54px 54px 0;
         color: white;
@@ -301,4 +304,165 @@ header {
     left: 2rem;
     z-index: -3;
   }
+}
+
+
+/* Estilo para dispositivos móveis pequenos */
+@media (max-width: 575.98px) {
+  /* Estilos aqui */
+}
+
+/* Estilo para dispositivos móveis médios */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Estilos aqui */
+}
+
+/* Estilo para tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Estilos aqui */
+
+  header{
+    .logo-top{
+      text-align: center;
+      img{
+        margin-left: 0rem;
+      }
+    }
+
+    .div-bmi{
+      flex-direction: column;
+      width: 90%;
+
+      .bmi-content{
+        width: 100%;
+
+        h1{
+          text-align: center;
+          font-size: 2.5rem;
+          width: 100%;
+        }
+        p{
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .bmi-card{
+        width: 100%;
+
+        .choose-metrics{
+
+          .div-metric{
+            width: 50%;
+            margin-right: 0rem;
+          }
+          .div-imperial{
+            width: 50%;
+          }
+
+
+        }
+
+        .inputs{
+          .inputs-metric{
+           .height {
+            width: 50%;
+            h4{
+              margin-bottom: 0.8rem;
+            }
+            .input-height{
+              input{
+                height: 3.5rem;
+              }
+              span{
+                right: 3.8rem;
+                top: 1.1rem;
+              }
+            }
+           }
+
+           .weight{
+            width: 50%;
+            h4{
+              margin-bottom: 0.8rem;
+            }
+            .input-weight{
+              input{
+                height: 3.5rem;
+              }
+              span{
+                right: 3.8rem;
+                top: 1.1rem;
+              }
+            }
+           }
+          }
+          .inputs-imperial{
+            .height{
+              .input-height{
+                .height-foot{
+                  width: 50%;
+                  input{
+                    height:3.5rem;
+                  }
+                  span{
+                    right: 3.8rem;
+                    top: 1.1rem;
+                  }
+                }
+                .height-inch{
+                  width: 50%;
+                  input{
+                    height:3.5rem;
+                  }
+                  span{
+                    right: 3.8rem;
+                    top: 1.1rem;
+                  }
+                }
+              }
+            }
+
+            .weight{
+
+            }
+          }
+
+
+
+        }
+
+        .div-bmi-card-description{
+          width: 95%;
+        }
+
+        .div-bmi-card-descripion-active{
+          width: 95%;
+          .bmi-description{
+            align-self: center;
+          }
+        }
+
+      }
+    }
+
+    .retangle{
+      width: 100%;
+      position: static;
+    }
+  }
+  
+
+}
+
+/* Estilo para laptops pequenos */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Estilos aqui */
+  
+
+}
+
+/* Estilo para desktops e laptops maiores (não precisa)*/
+@media (min-width: 1200px) {
+
 }
