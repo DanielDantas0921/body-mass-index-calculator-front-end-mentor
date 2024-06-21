@@ -247,7 +247,7 @@ header {
         flex-direction: column;
         justify-content: center;
         padding: 1rem;
-        width: 90%;
+        width: 96%;
         height: 8rem;
         background-color: $blue;
         border-radius: 0 54px 54px 0;
@@ -812,7 +812,14 @@ header {
 /* Estilo para laptops pequenos */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Estilos aqui */
-  
+  header{
+    .div-bmi{
+      .bmi-card {
+        width: 52%;
+      }
+  }
+
+  }
 
 }
 

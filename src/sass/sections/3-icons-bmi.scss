@@ -17,3 +17,56 @@
     }
   }
 }
+
+/* Estilo para dispositivos móveis pequenos */
+@media (max-width: 575.98px) {
+  /* Estilos aqui */
+}
+
+/* Estilo para dispositivos móveis médios */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Estilos aqui */
+}
+
+/* Estilo para tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Estilos aqui */
+  .icons-bmi{
+    flex-direction: column;
+    width: 90%;
+    .icons-card{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.5rem 2rem;
+      align-items: center;
+      img{
+        grid-column: 1;
+        width: 125%;
+        grid-row: 1/3;
+      }
+      h3{
+        margin-top: 0;
+        font-size: 1.8rem;
+      }
+      p{
+        grid-column: 2;
+        font-size: 1.4rem;
+      }
+
+    }
+  }
+
+
+}
+
+/* Estilo para laptops pequenos */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Estilos aqui */
+  
+
+}
+
+/* Estilo para desktops e laptops maiores (não precisa)*/
+@media (min-width: 1200px) {
+
+}

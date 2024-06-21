@@ -28,3 +28,87 @@
     }
   }
 }
+
+
+/* Estilo para dispositivos móveis pequenos */
+@media (max-width: 575.98px) {
+  /* Estilos aqui */
+  .bmi-result-means{
+    flex-direction: column;
+    width: 100%;
+
+    .man-eating{
+      width: 100vw;
+    }
+
+    .bmi-result-means-description{
+      margin-top: 0;
+      h1{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Estilo para dispositivos móveis médios */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Estilos aqui */
+
+  .bmi-result-means{
+    flex-direction: column;
+    width: 100%;
+
+    .man-eating{
+      width: 100vw;
+    }
+
+    .bmi-result-means-description{
+      margin-top: 0;
+      h1{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Estilo para tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Estilos aqui */
+  .bmi-result-means{
+    width: 100%;
+    margin:5rem 0 0 0;
+    align-items: stretch;
+
+    .curved-line-left{
+      display: none;
+    }
+
+    .bmi-result-means-description{
+      margin-top: 0;
+      h1{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/* Estilo para laptops pequenos */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Estilos aqui */
+  
+
+}
+
+/* Estilo para desktops e laptops maiores (não precisa)*/
+@media (min-width: 1200px) {
+
+}
