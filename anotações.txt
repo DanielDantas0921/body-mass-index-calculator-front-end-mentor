@@ -1,2 +1,3 @@
 coisas para fazer
-começar a fazer o responsivo focado só no header, depois vai para as outras seções
+fazer função responsiva para quando carregar a página ele aplicar o estilo a height isso no header
+após terminado o header fazer as section de baixo

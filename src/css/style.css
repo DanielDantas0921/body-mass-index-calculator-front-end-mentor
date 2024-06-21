@@ -264,10 +264,251 @@ header .retangle {
 /* Estilo para dispositivos móveis pequenos */
 @media (max-width: 575.98px) {
   /* Estilos aqui */
+  header .logo-top {
+    text-align: center;
+  }
+  header .logo-top img {
+    margin-left: 0rem;
+  }
+  header .div-bmi {
+    flex-direction: column;
+    width: 90%;
+  }
+  header .div-bmi .bmi-content {
+    width: 100%;
+  }
+  header .div-bmi .bmi-content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  header .div-bmi .bmi-content p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  header .div-bmi .bmi-card {
+    width: 100%;
+  }
+  header .div-bmi .bmi-card .choose-metrics .div-metric {
+    width: 50%;
+    margin-right: 0rem;
+  }
+  header .div-bmi .bmi-card .choose-metrics .div-imperial {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height h4 {
+    margin-bottom: 0.8rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight h4 {
+    margin-bottom: 0.8rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height h4 {
+    margin-bottom: 0.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight h4 {
+    margin: 0.5rem 0;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-description {
+    width: 95%;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-descripion-active {
+    width: 95%;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result {
+    width: 100%;
+    align-items: start;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-description {
+    align-self: center;
+    width: 100%;
+  }
+  header .retangle {
+    width: 100%;
+    left: 0rem;
+  }
 }
 /* Estilo para dispositivos móveis médios */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Estilos aqui */
+  header .logo-top {
+    text-align: center;
+  }
+  header .logo-top img {
+    margin-left: 0rem;
+  }
+  header .div-bmi {
+    flex-direction: column;
+    width: 90%;
+  }
+  header .div-bmi .bmi-content {
+    width: 100%;
+  }
+  header .div-bmi .bmi-content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  header .div-bmi .bmi-content p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  header .div-bmi .bmi-card {
+    width: 100%;
+  }
+  header .div-bmi .bmi-card .choose-metrics .div-metric {
+    width: 50%;
+    margin-right: 0rem;
+  }
+  header .div-bmi .bmi-card .choose-metrics .div-imperial {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height h4 {
+    margin-bottom: 0.8rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .height .input-height span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight h4 {
+    margin-bottom: 0.8rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-metric .weight .input-weight span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height h4 {
+    margin-bottom: 0.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-inch span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight h4 {
+    margin: 0.5rem 0;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-description {
+    width: 95%;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-descripion-active {
+    width: 95%;
+  }
+  header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-description {
+    align-self: center;
+  }
+  header .retangle {
+    width: 100%;
+    left: 0rem;
+  }
 }
 /* Estilo para tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -330,6 +571,9 @@ header .retangle {
     right: 3.8rem;
     top: 1.1rem;
   }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .height h4 {
+    margin-bottom: 0.5rem;
+  }
   header .div-bmi .bmi-card .inputs .inputs-imperial .height .input-height .height-foot {
     width: 50%;
   }
@@ -350,6 +594,29 @@ header .retangle {
     right: 3.8rem;
     top: 1.1rem;
   }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight h4 {
+    margin: 0.5rem 0;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-stone span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds {
+    width: 50%;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds input {
+    height: 3.5rem;
+  }
+  header .div-bmi .bmi-card .inputs .inputs-imperial .weight .input-weight .weight-pounds span {
+    right: 3.8rem;
+    top: 1.1rem;
+  }
   header .div-bmi .bmi-card .div-bmi-card-description {
     width: 95%;
   }
@@ -361,7 +628,6 @@ header .retangle {
   }
   header .retangle {
     width: 100%;
-    position: static;
   }
 }
 /* Estilo para laptops pequenos */
