@@ -1,3 +1,2 @@
 coisas para fazer
-alterar função de alterar height para adicionar uma classe com a height para quando ficar no responsivo eu alterar essa classe
-após terminado o header fazer as section de baixo
+fazer incons-bmi a parte responsiva

@@ -44,42 +44,44 @@ export function hideBmiActive() {
   bmiDescriptionActive.style.display = "none";
 }
 
-function increaseBmiSizeDescription() {
-  // colocar o height de 10 rem
-  if (window.innerWidth <= 767) {
-    bmiDescriptionActive.style.height = "auto";
-    return
-  }
+// function increaseBmiSizeDescription() {
+//   // colocar o height de 10 rem
+//   if (window.innerWidth <= 767) {
+//     bmiDescriptionActive.style.height = "auto";
+//     return
+//   }
 
-  bmiDescriptionActive.style.height = "10rem";
-}
-function normalizeBmiSizeDescription() {
-  if (window.innerWidth <= 767) {
-    bmiDescriptionActive.style.height = "auto";
-    return
-  }
-  bmiDescriptionActive.style.height = "8rem";
-}
+//   bmiDescriptionActive.style.height = "auto"; // era 10 rem
+// }
+// function normalizeBmiSizeDescription() {
+//   if (window.innerWidth <= 767) {
+//     bmiDescriptionActive.style.height = "auto";
+//     return
+//   }
+//   bmiDescriptionActive.style.height = "auto"; // era 8 rem
+// }
 
 function changeBmiDescriptionText(resultFormated) {
   if (resultFormated < 18.5) {
-    normalizeBmiSizeDescription();
     return "Your BMI is classified as underweight. The underweight range is defined as a BMI of less than 18.5.Health Status: Not considered healthy.";
   } else if (resultFormated <= 24.9) {
-    normalizeBmiSizeDescription();
     return "Your BMI falls within the normal weight range. This range is defined as a BMI between 18.5 and 24.9.Health Status: Considered healthy.";
   } else if (resultFormated <= 29.9) {
-    normalizeBmiSizeDescription();
     return "Your BMI is classified as overweight. The overweight range is defined as a BMI between 25 and 29.9.Health Status: Not considered healthy.";
   } else if (resultFormated <= 34.9) {
-    normalizeBmiSizeDescription();
     return "Your BMI falls within Obesity Class 1. This range is defined as a BMI between 30 and 34.9.Health Status: Not considered healthy.";
   } else if (resultFormated <= 39.9) {
-    normalizeBmiSizeDescription();
     return "Your BMI is classified as Obesity Class 2. This range is defined as a BMI between 35 and 39.9.Health Status: Not considered healthy.";
   } else if (resultFormated >= 40) {
-    increaseBmiSizeDescription();
     return "Your BMI falls within Obesity Class 3, also known as severe or morbid obesity. This range is defined as a BMI of 40 or higher.Health Status: Not considered healthy.";
+  }
+}
+
+function formatBmi(result){
+  if(result > 99){
+    return 99.99
+  } else{
+    return result
   }
 }
 
@@ -91,10 +93,8 @@ export function inputMetricHeightFun() {
     return;
   }
   showBmiActive();
-  console.log(`O height é: ${height} `);
-  console.log(`O weight é: ${weight} `);
-  const result = weight / (height * height);
-  console.log("O resultado do bmi é " + result);
+  let result = weight / (height * height);
+  result = formatBmi(result)
   const resultbmiFormatado = result.toFixed(2);
   resultbmi.innerText = resultbmiFormatado;
   resultbmiDescription.innerText = changeBmiDescriptionText(resultbmiFormatado);
@@ -107,10 +107,8 @@ export function inputMetricWeightFun() {
     return;
   }
   showBmiActive();
-  console.log(`O height é: ${height} `);
-  console.log(`O weight é: ${weight} `);
-  const result = weight / (height * height);
-  console.log("O resultado do bmi é " + result);
+  let result = weight / (height * height);
+  result = formatBmi(result)
   const resultbmiFormatado = result.toFixed(2);
   resultbmi.innerText = resultbmiFormatado;
   resultbmiDescription.innerText = changeBmiDescriptionText(resultbmiFormatado);
@@ -134,11 +132,14 @@ export function inputImperialHeightFootFun() {
   const weightPoundsInKg = Number(inputImperialWeightPounds.value) * 0.45;
   const weightStoneInKg = Number(inputImperialWeightStone.value) * 6.35;
   const weight = weightPoundsInKg + weightStoneInKg;
-  const result = weight / (height * height);
+  let result = weight / (height * height);
+  result = formatBmi(result)
   const resultbmiFormatado = result.toFixed(2);
   resultbmi.innerText = resultbmiFormatado;
   resultbmiDescription.innerText = changeBmiDescriptionText(resultbmiFormatado);
 }
+
+
 export function inputImperialHeightInchFun() {
   if (
     inputImperialWeightPounds.value == "" &&
@@ -156,7 +157,8 @@ export function inputImperialHeightInchFun() {
   const weightPoundsInKg = Number(inputImperialWeightPounds.value) * 0.45;
   const weightStoneInKg = Number(inputImperialWeightStone.value) * 6.35;
   const weight = weightPoundsInKg + weightStoneInKg;
-  const result = weight / (height * height);
+  let result = weight / (height * height);
+  result = formatBmi(result)
   const resultbmiFormatado = result.toFixed(2);
   resultbmi.innerText = resultbmiFormatado;
   resultbmiDescription.innerText = changeBmiDescriptionText(resultbmiFormatado);
@@ -179,7 +181,8 @@ export function inputImperialWeightStoneFun() {
   const weightPoundsInKg = Number(inputImperialWeightPounds.value) * 0.45;
   const weightStoneInKg = Number(inputImperialWeightStone.value) * 6.35;
   const weight = weightPoundsInKg + weightStoneInKg;
-  const result = weight / (height * height);
+  let result = weight / (height * height);
+  result = formatBmi(result)
   const resultbmiFormatado = result.toFixed(2);
   resultbmi.innerText = resultbmiFormatado;
   resultbmiDescription.innerText = changeBmiDescriptionText(resultbmiFormatado);
@@ -202,7 +205,8 @@ export function inputImperialWeightPoundsFun() {
   const weightPoundsInKg = Number(inputImperialWeightPounds.value) * 0.45;
   const weightStoneInKg = Number(inputImperialWeightStone.value) * 6.35;
   const weight = weightPoundsInKg + weightStoneInKg;
-  const result = weight / (height * height);
+  let result = weight / (height * height);
+  result = formatBmi(result)
   const resultbmiFormatado = result.toFixed(2);
   resultbmi.innerText = resultbmiFormatado;
   resultbmiDescription.innerText = changeBmiDescriptionText(resultbmiFormatado);

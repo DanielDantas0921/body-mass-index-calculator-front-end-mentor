@@ -241,11 +241,11 @@ header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result {
 }
 header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result h2 {
   font-size: 1.2rem;
+  text-align: center;
 }
 header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-result p {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
-  margin-right: 0.5rem;
 }
 header .div-bmi .bmi-card .div-bmi-card-descripion-active .bmi-description {
   width: 50%;
@@ -755,10 +755,36 @@ header .retangle {
 /* Estilo para dispositivos móveis pequenos */
 @media (max-width: 575.98px) {
   /* Estilos aqui */
+  .icons-bmi {
+    flex-direction: column;
+    width: 90%;
+  }
+  .icons-bmi .icons-card img {
+    width: 12%;
+  }
+  .icons-bmi .icons-card h3 {
+    font-size: 2.5rem;
+  }
+  .icons-bmi .icons-card p {
+    font-size: 1.5rem;
+  }
 }
 /* Estilo para dispositivos móveis médios */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* Estilos aqui */
+  .icons-bmi {
+    flex-direction: column;
+    width: 90%;
+  }
+  .icons-bmi .icons-card img {
+    width: 12%;
+  }
+  .icons-bmi .icons-card h3 {
+    font-size: 2.5rem;
+  }
+  .icons-bmi .icons-card p {
+    font-size: 1.5rem;
+  }
 }
 /* Estilo para tablets */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -890,5 +916,173 @@ header .retangle {
 .limitations-3 .limitations-card p {
   color: #5E6E85;
 }
+
+.none {
+  display: none;
+}
+
+/* Estilo para dispositivos móveis pequenos */
+@media (max-width: 575.98px) {
+  /* Estilos aqui */
+  .none {
+    display: block;
+  }
+  .limitations-of-bmi {
+    display: none;
+  }
+  .limitations-of-bmi-mobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-text h1 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    color: #253347;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-text p {
+    color: #5E6E85;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card .div-limitations-h1 {
+    display: flex;
+    margin-bottom: 0.8rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card .div-limitations-h1 h1 {
+    margin-left: 0.8em;
+    font-size: 1.8rem;
+    color: #253347;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card p {
+    font-size: 1.1rem;
+    color: #5E6E85;
+  }
+}
+/* Estilo para dispositivos móveis médios */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Estilos aqui */
+  .none {
+    display: block;
+  }
+  .limitations-of-bmi {
+    display: none;
+  }
+  .limitations-of-bmi-mobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-text h1 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    color: #253347;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-text p {
+    color: #5E6E85;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem 1rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card .div-limitations-h1 {
+    display: flex;
+    margin-bottom: 0.8rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card .div-limitations-h1 h1 {
+    margin-left: 0.8em;
+    font-size: 1.8rem;
+    color: #253347;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card p {
+    font-size: 1.1rem;
+    color: #5E6E85;
+  }
+}
+/* Estilo para tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Estilos aqui */
+  .none {
+    display: block;
+  }
+  .limitations-of-bmi {
+    display: none;
+  }
+  .limitations-of-bmi-mobile {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-text h1 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    color: #253347;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-text p {
+    color: #5E6E85;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card .div-limitations-h1 {
+    display: flex;
+    margin-bottom: 0.8rem;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card .div-limitations-h1 h1 {
+    margin-left: 0.8em;
+    font-size: 1.8rem;
+    color: #253347;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card p {
+    font-size: 1.1rem;
+    color: #5E6E85;
+  }
+  .limitations-of-bmi-mobile .limitations-of-bmi-grid .limitations-card-last {
+    grid-column: 1/3;
+    justify-self: center;
+    width: 45vw;
+  }
+}
+/* Estilo para laptops pequenos */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Estilos aqui */
+}
+/* Estilo para desktops e laptops maiores (não precisa)*/
 
 /*# sourceMappingURL=style.css.map */
